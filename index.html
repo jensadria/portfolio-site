@@ -21,12 +21,20 @@
 
     <div id="main">
       <ul>
-        <li>About</li>
-        <li>Skills & Technologies</li>
-        <li>Projects</li>
+        <li class="link" onclick="showContent(event, 'about')">About</li>
+        <div id="about" class="content">Testing this bad boy</div>
+        <li class="link" onclick="showContent(event, 'skills')">
+          Skills & Technologies
+        </li>
+        <div id="skills" class="content">Also this bad boy</div>
+
+        <li class="link" onclick="showContent(event,'projects')">Projects</li>
+        <div id="projects" class="content">Projects</div>
+
         <li>Education</li>
         <li>Contact</li>
       </ul>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

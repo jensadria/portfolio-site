@@ -22,7 +22,7 @@ h5 {
 }
 
 #logo {
-  width: 28px;
+  width: 25px;
   height: auto;
   margin: 0 1rem;
 }
@@ -36,7 +36,7 @@ h5 {
 
 header h1 {
   letter-spacing: 0.1rem;
-
+  margin-bottom: -8px;
   font-size: 3rem;
 }
 
@@ -52,6 +52,7 @@ header p {
 
 #main {
   margin-left: 2rem;
+  margin-top: 1.5rem;
 }
 
 #main ul {
@@ -84,18 +85,17 @@ header p {
   z-index: -1;
 }
 #main li:hover:after {
-  width: 150%;
+  width: 120%;
   left: 0;
 }
 
-details > summary {
-  list-style: none;
-}
-details > summary::-webkit-details-marker {
+.content {
   display: none;
+  -webkit-transition: display 2s;
+  -moz-transition: display 2s;
+  transition: display 2s;
 }
 
-div .summary-content {
-  border: 1px;
-  border-color: tomato;
+.content.active {
+  display: block;
 }
