@@ -55,11 +55,11 @@ header p {
   margin-top: 1.5rem;
 }
 
-#main ul {
+#main > ul {
   list-style: none;
 }
 
-#main ul li {
+#main > ul > li {
   width: fit-content;
   display: block;
   font-family: 'DM Serif Display', serif;
@@ -72,7 +72,7 @@ header p {
   color: #000;
 }
 
-#main li:after {
+#main > ul > li::after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: '';
@@ -84,9 +84,33 @@ header p {
   width: 0;
   z-index: -1;
 }
-#main li:hover:after {
+#main > ul > li:hover::after {
   width: 120%;
   left: 0;
+}
+
+#main > ul > li .link.active {
+  bottom: 0;
+  content: '';
+  height: 15px;
+  left: 0;
+  position: absolute;
+  background: var(--blue);
+  /* transition: width 0.3s ease 0s, left 0.3s ease 0s; */
+  width: 120%;
+  z-index: 0;
+}
+.skills-list {
+  display: flex;
+}
+
+.skills-list ul {
+  margin-right: 2rem;
+  list-style: none;
+}
+.skills-list ul li {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .content {
@@ -98,4 +122,14 @@ header p {
 
 .content.active {
   display: block;
+}
+
+div.card {
+  width: 600px;
+  max-width: 100vw;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  /* border-radius: 6px; */
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2); */
 }
