@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+:root {
+  --blue: #5aaab7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'DM Serif Display', serif;
+}
+
+#logo {
+  width: 28px;
+  height: auto;
+  margin: 0 1rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+header h1 {
+  letter-spacing: 0.1rem;
+
+  font-size: 3rem;
+}
+
+header p {
+  text-transform: uppercase;
+  color: var(--blue);
+  letter-spacing: 0.25rem;
+}
+
+.name {
+  transform: translateY(-10px);
+}
+
+#main {
+  margin-left: 2rem;
+}
+
+#main ul {
+  list-style: none;
+}
+
+#main ul li {
+  width: fit-content;
+  display: block;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-style: italic;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  color: #000;
+}
+
+#main li:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  height: 15px;
+  left: 0;
+  position: absolute;
+  background: var(--blue);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  z-index: -1;
+}
+#main li:hover:after {
+  width: 150%;
+  left: 0;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+div .summary-content {
+  border: 1px;
+  border-color: tomato;
+}
