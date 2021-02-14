@@ -51,12 +51,17 @@
             <ul>
               <li>Vue</li>
               <li>Node</li>
-              <li>Sass</li>
+              <li>React</li>
             </ul>
             <ul>
               <li>MongoDB</li>
               <li>SQL</li>
-              <li></li>
+              <li>Sass</li>
+            </ul>
+            <ul>
+              <li>InDesign</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
             </ul>
           </div>
         </div>
@@ -64,8 +69,13 @@
         <li class="link" onclick="showContent(event,'projects')">Projects</li>
         <div id="projects" class="content card">
           <div class="project">
-            <div class="project">N-Up Calculator</div>
+            <h3>N-Up Calculator</h3>
             <div class="project-thumbnail"></div>
+            <p>
+              This app was developed for the paper & print industry,
+              specifically the one at which I worked. It calculates the maximum
+              yield of a paper size out of a sheet of any given size.
+            </p>
           </div>
         </div>
 
@@ -73,6 +83,14 @@
         <li>Contact</li>
       </ul>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+      function showContent(event, contentID) {
+        const content = document.getElementById(contentID);
+
+        content.classList.toggle('active');
+        event.target.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>
