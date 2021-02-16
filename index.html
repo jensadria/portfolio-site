@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
     <title>Jens Adria - Web Developer</title>
   </head>
   <body>
@@ -64,6 +70,7 @@
               <li>Illustrator</li>
             </ul>
           </div>
+          Fluent in English, German and Indonesian
         </div>
 
         <li class="link" onclick="showContent(event,'projects')">Projects</li>
@@ -90,6 +97,7 @@
 
         content.classList.toggle('active');
         event.target.classList.toggle('active');
+        event.target.classList.toggle('link');
       }
     </script>
   </body>
