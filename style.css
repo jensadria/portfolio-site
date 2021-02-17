@@ -50,7 +50,7 @@ header p {
 }
 
 #main {
-  margin-left: 3rem;
+  margin-left: 4rem;
   margin-top: 0.5rem;
 }
 
@@ -129,7 +129,8 @@ header p {
   max-width: 100vw;
   padding: 0;
   margin: 0;
-  transition: all 0.8s ease-in-out;
+  margin-left: 1rem;
+  transition: all 0.25s ease-in-out;
 }
 
 #main > ul > div.content.active {
@@ -138,7 +139,9 @@ header p {
   margin-top: 1rem;
   max-width: 100vw;
   max-height: 30em;
-  transition: max-height 0.8s ease-in-out, width 0.8s cubic-bezier(0, 1, 0, 1);
+  margin-left: 1rem;
+  /* transition: max-height 0.5s ease-in-out, width 0.5s cubic-bezier(0, 1, 0, 1); */
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
   margin-bottom: 1rem;
 }
 
@@ -150,6 +153,10 @@ div.card {
   margin-bottom: 1.5rem;
   /* border-radius: 6px; */
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2); */
+}
+
+#education ul {
+  line-height: 1.35rem;
 }
 
 .projects {
@@ -172,7 +179,7 @@ i {
 
 @media only screen and (max-width: 600px) {
   ul {
-    width: 100vw;
+    width: 500px;
   }
   #main > ul > div.content.active {
     width: 400px;
